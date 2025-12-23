@@ -1,0 +1,644 @@
+# replicas:
+#   clamav: 0
+#   dovecot: 0
+#   postfix: 0
+#   dkimpy: 0
+# Remove all resource request to make it run on default IONOS
+# resources:
+#   cassandra:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   clamd:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   collabora:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   collaboraController:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   cryptpad:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   dkimpy:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   dovecot:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   element:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   freshclam:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   icap:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   intercomService:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   jibri:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   jicofo:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   jigasi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   jitsi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   jitsiKeycloakAdapter:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   jvb:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   notesBackend:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   notesFrontend:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   notesYProvider:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   opendeskKeycloakBootstrap:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   opendeskStaticFiles:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsKeycloak:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsKeycloakBootstrap:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsKeycloakExtensionHandler:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsKeycloakExtensionProxy:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   mariadb:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   matrixNeoBoardWidget:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   matrixNeoChoiceWidget:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   matrixNeoDateFixBot:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   matrixNeoDateFixWidget:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   matrixUserVerificationService:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   memcached:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   milter:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   minio:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   nextcloud:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   nextcloudCron:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   nextcloudExporter:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   nextcloudNotifyPush:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   nginxS3Gateway:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openproject:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openprojectDbInit:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openprojectAppInit:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openprojectSeederJob:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openprojectWorkers:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreDocumentConverter:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreGuidedtours:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreImageConverter:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreMW:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreUI:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreUIMiddleware:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreUIMiddlewareUpdater:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeCoreUserGuide:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeGotenberg:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeGuardUI:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangeNextcloudIntegrationUI:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangePluginsUI:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   openxchangePublicSectorUI:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   oxConnector:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   postfix:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   postgresql:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   prosody:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   redis:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   synapse:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   synapseWeb:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsGuardianManagementApi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsGuardianManagementUi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsGuardianAuthorizationApi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsOpenPolicyAgent:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsLdapNotifier:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsLdapServer:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsNotificationsApi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsPortalFrontend:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsPortalConsumer:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsPortalConsumerDependencies:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsPortalServer:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsProvisioningApi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsProvisioningDispatcher:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsProvisioningPrefill:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsProvisioningRegisterConsumers:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsProvisioningUdmTransformer:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsProvisioningNats:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsSelfserviceConsumer:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsStackDataUms:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsUdmListener:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsUdmRestApi:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsUdmRestApiInit:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsUmcGateway:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   umsUmcServer:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   wellKnown:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
+#   xwiki:
+#     limits:
+#       cpu: 0
+#       memory: "0Mi"
+#     requests:
+#       cpu: 0
+#       memory: "0Mi"
