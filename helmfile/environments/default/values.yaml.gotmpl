@@ -2,6 +2,15 @@ functional:
   portal:
     linkSupport: "https://opendesk.eu/support"
     linkFeedback: "https://opendesk.eu/feedback"
+monitoring:
+  prometheus:
+    serviceMonitors:
+      enabled: true
+    podMonitors:
+      enabled: true
+  grafana:
+    dashboards:
+      enabled: true
 
 # replicas:
 #   clamav: 0
